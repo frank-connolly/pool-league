@@ -30,17 +30,17 @@ public class PoolLeagueApplication implements CommandLineRunner {
         league1.setCode("slainte");
 
         Player player1 = new Player();
-        player1.setLeague(league1);
+        player1.setLeagueId(league1.getId());
         player1.setFirstName("Henrik");
         player1.setLastName("Larsson");
 
         Player player2 = new Player();
-        player2.setLeague(league1);
+        player2.setLeagueId(league1.getId());
         player2.setFirstName("Alex");
         player2.setLastName("Murphy");
 
         Player player3 = new Player();
-        player3.setLeague(league1);
+        player3.setLeagueId(league1.getId());
         player3.setFirstName("Richard");
         player3.setLastName("Jones");
 

@@ -12,10 +12,7 @@ public class Player {
     private Long id;
     private String firstName;
     private String lastName;
-
-    @ManyToOne
-    @JoinColumn(name = "league_id")
-    private League league;
+    private Long leagueId;
 
     public Long getId() {
         return id;
@@ -37,11 +34,11 @@ public class Player {
         this.lastName = lastName;
     }
 
-    public League getLeague() {
-        return league;
+    public Long getLeagueId() {
+        return leagueId;
     }
 
-    public void setLeague(League league) {
-        this.league = league;
+    public void setLeagueId(Long leagueId) {
+        this.leagueId = leagueId;
     }
 }

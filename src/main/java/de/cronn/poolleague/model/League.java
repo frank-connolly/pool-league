@@ -16,7 +16,7 @@ public class League {
     @Column(name = "code")
     private String code;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "league")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "leagueId", cascade = CascadeType.ALL)
     Set<Player> players = new LinkedHashSet<>();
 
     public League() {
