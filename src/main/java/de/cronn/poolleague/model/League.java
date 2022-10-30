@@ -1,12 +1,9 @@
 package de.cronn.poolleague.model;
 
-import lombok.Builder;
-
 import javax.persistence.*;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-@Builder
 @Entity
 @Table(name = "leagues")
 public class League {
