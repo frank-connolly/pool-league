@@ -1,6 +1,8 @@
 package de.cronn.poolleague.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "player")
@@ -13,6 +15,9 @@ public class Player {
     private String firstName;
     private String lastName;
     private Long leagueId;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<LeagueStanding> leagueStandings = new ArrayList<>();
 
     public Long getId() {
         return id;
